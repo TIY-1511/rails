@@ -1,5 +1,5 @@
 
-# Week 04
+# Rails
 
 ## Installing Rails
 
