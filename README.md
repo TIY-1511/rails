@@ -3,7 +3,7 @@
 
 ## Installing Rails
 
-Install Ruby (we have already done this)
+Install Ruby 
 
 Check your version number:
 
