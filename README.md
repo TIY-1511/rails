@@ -29,8 +29,8 @@ rails -v
 
 Instructor
 * Questionable
-  * A questions and answers website
-  * Similar to stack overflow or quora
+  * a questions and answers website
+  * similar to stack overflow or quora
 
 Class
 *  Explore
