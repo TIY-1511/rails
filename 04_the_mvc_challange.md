@@ -5,16 +5,27 @@
 #### Hashes as parameters and the new syntax
 
 Rails has a way of displaying a number as a currency
-* The method: number_to_currency(hotel.price)
-  * http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html
-* As described in the docs, the method signature is:
-  * number_to_currency(number, options = {})
-  * This means that the last parameter is a hash
-* As explained in the documentation one of the options is unit
-  * :unit - Sets the denomination of the currency (defaults to “$”).
-* Another option is precision
-  * :precision - Sets the level of precision (defaults to 2).
 
+The method - http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html
+```ruby
+number_to_currency(hotel.price)
+```
+
+As described in the docs, the method signature is:
+```ruby
+number_to_currency(number, options = {})
+```
+This means that the last parameter is a hash
+
+As explained in the documentation one of the options is unit
+```ruby
+:unit # Sets the denomination of the currency (defaults to “$”).
+```
+
+Another option is precision
+```ruby
+:precision # Sets the level of precision (defaults to 2).
+```
 You can experiment with this method in the rails console:
 ```
 rails console
