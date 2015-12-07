@@ -41,7 +41,7 @@ While accurate, it is not that readable for the users.
 
 We can use a Rails formatter to format the date:
 
-```
+```html
 <!-- app/views/questions/index.html.erb -->
 <h3><%= pluralize(@questions.count, 'Question') %></h3>
 
