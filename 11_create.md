@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   get 'questions/:id' => 'questions#show', as: :question
 ```
 
-Note that Rails looks matching rules in order, from top down. If we did not place this new rule above `show`, then the `question` route would still match the URL and process the request. 
+Note that Rails matches rules in order, from top down. If we did not place this new rule above `show`, then the `question` route would still match the URL and process the request. 
 
 After applying this we end up with the next error:
 
