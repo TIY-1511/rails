@@ -84,7 +84,7 @@ Now we can add the missing template. We can use embedded Ruby to display some of
 <h3><%= @question.title %></h3>
 
 <p><%= @question.body %></p>
-```html
+```
 
 Now refreshing the browser serves up a page with the details of the requested Question.
 
