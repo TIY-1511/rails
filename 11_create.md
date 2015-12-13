@@ -136,7 +136,7 @@ Our routes file contains the following route:
 ```
 get 'questions' => 'questions#index'
 ```
-That handles the same URL, however that is for a GET, we are doing `n HTTP POST. This means we need to aff another routing rule:
+That handles the same URL however that is for a GET. We are doing an HTTP POST. This means we need to add another routing rule:
 
 ```ruby
 # app/config/routes.rb
