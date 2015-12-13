@@ -120,7 +120,9 @@ We can create the template with the following HTML:
 
 ```
 
-The `action` attribute tells the browser which URL to use when the user clicks submit. When the user does click submit, the form data will be sent to the server. This form data will include the `name` attributes of the fields and the `value` or `text` content of the input fields. Rails will handle this request, and make these values available in the controller. 
+The `action` attribute tells the browser which URL to use when the user clicks submit. When the user does click submit, the form data will be sent to the server. This form data will include the `name` attributes of the fields and the `value` or `text` content of the input fields. Rails will handle this request, and make these values available in the controller.
+
+This form data will be available in the controller through an object known as a `params` object. This object behaves like a hash even though it is not a standard hash. For this reason the `params` object is known as a 'hash-like' object. 
 
 ## Create Route
 
