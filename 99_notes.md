@@ -12,5 +12,5 @@ Delete all data in the local database - http://stackoverflow.com/a/5322505
 Create a seeds file from existing database data - https://github.com/rroblak/seed_dump
 
 To see all routes you can do the following:
-* browse to http://localhost:3000/rails/info/routes
+* browse to - http://localhost:3000/rails/info/routes
 * in the terminal type: `rake routes`
