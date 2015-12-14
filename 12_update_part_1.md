@@ -22,6 +22,7 @@ get 'questions/:id/edit' => 'questions#edit', as: :edit_question
 That specifies that a URL matching the pattern on the left, should call the `edit` action on the `QuestionsController`. That route has a name of `edit_question`. We can use this name in the URL helper methods if we wish e.g.
 
 ```html
+<!-- app/views/questions/edit.html.erb -->
 <%= link_to "Edit", edit_question_path(@question) %>
 ```
 
