@@ -14,3 +14,14 @@ Create a seeds file from existing database data - https://github.com/rroblak/see
 To see all routes you can do the following:
 * browse to - http://localhost:3000/rails/info/routes
 * in the terminal type: `rake routes`
+
+
+
+## API sites
+
+You can have a look through here and see if something interests you:
+
+https://www.mashape.com/
+
+http://www.programmableweb.com/apis/directory
+
