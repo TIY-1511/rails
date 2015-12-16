@@ -15,6 +15,7 @@ To see all routes you can do the following:
 * browse to - http://localhost:3000/rails/info/routes
 * in the terminal type: `rake routes`
 
+Boostrap Grid System - https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system
 
 
 #### API sites
