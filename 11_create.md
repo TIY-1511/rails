@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   get 'questions/:id' => 'questions#show', as: :question
 ```
 
-Note that Rails looks matching rules in order, from top down. If we did not place this new rule above `show`, then the `question` route would still match the URL and process the request. 
+Note that Rails matches rules in order, from top down. If we did not place this new rule above `show`, then the `question` route would still match the URL and process the request. 
 
 After applying this we end up with the next error:
 
@@ -120,7 +120,9 @@ We can create the template with the following HTML:
 
 ```
 
-The `action` attribute tells the browser which URL to use when the user clicks submit. When the user does click submit, the form data will be sent to the server. This form data will include the `name` attributes of the fields and the `value` or `text` content of the input fields. Rails will handle this request, and make these values available in the controller. 
+The `action` attribute tells the browser which URL to use when the user clicks submit. When the user does click submit, the form data will be sent to the server. This form data will include the `name` attributes of the fields and the `value` or `text` content of the input fields. Rails will handle this request, and make these values available in the controller.
+
+This form data will be available in the controller through an object known as a `params` object. This object behaves like a hash even though it is not a standard hash. For this reason the `params` object is known as a 'hash-like' object. 
 
 ## Create Route
 
@@ -134,7 +136,7 @@ Our routes file contains the following route:
 ```
 get 'questions' => 'questions#index'
 ```
-That handles the same URL, however that is for a GET, we are doing `n HTTP POST. This means we need to aff another routing rule:
+That handles the same URL however that is for a GET. We are doing an HTTP POST. This means we need to add another routing rule:
 
 ```ruby
 # app/config/routes.rb
