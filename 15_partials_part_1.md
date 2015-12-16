@@ -44,7 +44,7 @@ This method will then pull in and render the referenced partial.
 We can make a similar change to new.html.erb
 
 ```html
-<!-- app/views/questions/edit.html.erb -->
+<!-- app/views/questions/new.html.erb -->
 <h3>New Question</h3>
 
 <%= render('form') %>
