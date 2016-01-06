@@ -55,6 +55,8 @@ end
 ```
 If the value of the attribute does not match the regular expression, then an error will be added to the models validation errors.
 
+The odd looking code above is a regular expression, to learn more about search google for tutorials like this one - http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm 
+
 The following is added to the model class to make use of this validator:
 
 ```ruby
