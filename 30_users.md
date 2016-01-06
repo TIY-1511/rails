@@ -72,7 +72,7 @@ end
 class User < ActiveRecord::Base
 	validates :name,  presence: true, length: { maximum: 50 }
   	validates :email, presence: true, length: { maximum: 200 }
-        validates :email, email: true
+  	validates :email, email: true
 end
 
 ``` 
