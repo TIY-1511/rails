@@ -34,19 +34,23 @@ Next we need to make sure that the email address is in a valid format. The recom
 
 As explained by the Rails guides "The easiest way to add custom validators for validating individual attributes is with the convenient ActiveModel::EachValidator. In this case, the custom validator class must implement a validate_each method which takes three arguments: record, attribute, and value. These correspond to the instance, the attribute to be validated, and the value of the attribute in the passed instance."
 
-To implement this create a new folder `app/validators` and add the following file:
+Add a new custom validator above the User model:
 
 ```ruby
-# app/validators/email_validator.rb
+# app/models/user.rb
 class EmailValidator < ActiveModel::EachValidator
   
   def validate_each(record, attribute, value)
     unless value =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
       record.errors[attribute] << (options[:message] || "is not an email")
-    end
   end
-  
 end
+  
+class User < ActiveRecord::Base
+	validates :name,  presence: true, length: { maximum: 50 }
+  	validates :email, presence: true, length: { maximum: 200 }
+end
+
 ```
 If the value of the attribute does not match the regular expression, then an error will be added to the models validation errors.
 
@@ -54,16 +58,21 @@ The following is added to the model class to make use of this validator:
 
 ```ruby
 # app/models/user.rb
-require_dependency 'app/validators/email_validator.rb'
+class EmailValidator < ActiveModel::EachValidator
+  
+  def validate_each(record, attribute, value)
+    unless value =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+      record.errors[attribute] << (options[:message] || "is not an email")
+  end
+end
+
 class User < ActiveRecord::Base
 	validates :name,  presence: true, length: { maximum: 50 }
   	validates :email, presence: true, length: { maximum: 200 }
-    validates :email, email: true
+        validates :email, email: true
 end
 
 ``` 
-
-Take note of the `require_dependency` call. In this case Rails may not have auto-loaded that file, most likely because we don't instantiate it in a typical way i.e. we did not use EmailValidator.new - http://guides.rubyonrails.org/autoloading_and_reloading_constants.html#require-dependency
 
 FYI: An interesting note on validations and and emails: http://stackoverflow.com/a/1189163/259477
 
