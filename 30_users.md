@@ -89,10 +89,9 @@ To add this validation check to the model we use the following:
 
 ```ruby
 # app/models/user.rb
-require_dependency 'validators/email_validator.rb'
 class User < ActiveRecord::Base
-	validates :name,  presence: true, length: { maximum: 50 }
-  	validates :email, presence: true, length: { maximum: 200 }
+    validates :name,  presence: true, length: { maximum: 50 }
+    validates :email, presence: true, length: { maximum: 200 }
     validates :email, email: true
     validates :email, uniqueness: { case_sensitive: false }
 end
