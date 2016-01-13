@@ -166,7 +166,7 @@ Loading development environment (Rails 4.2.3)
   User Load (0.1ms)  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "Mike"]]
  => #<User id: 6, name: "Mike", email: "mike@hotmail.com", created_at: "2015-09-06 13:35:54", updated_at: "2015-09-06 13:35:54", password_digest: "$2a$10$QunZ8UGqohZSPryekV3FPuAww1eu6N8/84UL1u/YwIp..."> 
 
-2.2.2 :004 > mike.authenticate("invalid")
+2.2.2 :004 > mike.authenticate("abc100")
  => false 
 2.2.2 :005 > mike.authenticate("MIKE_PWD")
  => false 
