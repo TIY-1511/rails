@@ -10,6 +10,7 @@ Good way to troubleshoot.
 
 Delete all data in the local database - http://stackoverflow.com/a/5322505
 
+To reload the database scheme and run the seeds file use - rake db:reset
 
 Create a seeds file from existing database data - https://github.com/rroblak/seed_dump
 

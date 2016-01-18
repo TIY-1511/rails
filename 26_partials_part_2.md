@@ -381,6 +381,8 @@ The view needs to be updated to use the new name of the partial:
 
 ```
 
+Changing the name from `_questions_table.html.erb` to `_questions.html.erb` is a good design choice. If we change how we represent the data the name of the file will still be sensible e.g. we could use a list instead of a table to represent the questions
+
 ## Exercise 
 
 Use partials to remove the duplicate tables in Explore

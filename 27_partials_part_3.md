@@ -71,9 +71,9 @@ You can do this when rendering a partial from a partial, or when rendering a par
 
 ## Partials and collections 
 
-In the questions partial, we are dealing with a list of 'questions'. The render method has a `:collection` option to use when dealing with collections. 
+In the questions partial, we are dealing with a list or collection of 'questions'. The render method has a `:collection` option to use when dealing with collections. 
 
-When using this, the partial will be rendered once for each item in the collection. 
+When using this `:collection` option, the partial will be rendered once for each item in the collection. 
 
 To make use of this we can update the questions partial:
 
@@ -111,6 +111,6 @@ Rails determines the partial to use by looking at the type of each item (not the
 ```
 
 
-As this is a complex topic, 26_partials_part_4.md provides a recap and applies this technique to displaying answers. 
+As this is a complex topic, the next section we will go over a recap and apply this technique to displaying answers. 
 
 
