@@ -29,3 +29,4 @@ https://www.mashape.com/
 
 http://www.programmableweb.com/apis/directory
 
+Yellow fade technique - http://stackoverflow.com/a/5205476
