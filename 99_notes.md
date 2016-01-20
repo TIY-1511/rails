@@ -18,8 +18,9 @@ To see all routes you can do the following:
 * browse to - http://localhost:3000/rails/info/routes
 * in the terminal type: `rake routes`
 
-Boostrap Grid System - https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system
-
+Boostrap Grid System - https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system   
+Agular UI CDN - https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js   
+Or download it from here - http://jqueryui.com/download/   
 
 #### API sites
 
