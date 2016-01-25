@@ -171,7 +171,7 @@ alert("This file is generated on the server but executed on the client.");
 
 Just as a view is rendered in the browser, this code is run in the browser following a successful creation. 
 
-What we would like to do is append HTML to the table on the `new` page. We can use JQuery to append HTML to the table by using `$('tbody').append(...);`
+What we would like to do is append HTML to the table on the `create` page. We can use JQuery to append HTML to the table by using `$('tbody').append(...);`
 
 That will find the `tbody` element and add what ever HTML it is provided with. This HTML will be added just before the closing tbody tag.
 
